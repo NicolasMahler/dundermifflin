@@ -1,0 +1,39 @@
+html,
+body {
+  font-family: "open sans", "Raleway", "Arial", sans-serif;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h3 {
+  font-family: "open sans", sans-serif;
+}
+
+p,
+a {
+  font-family: "Raleway", sans-serif;
+}
+
+hr {
+  border-color: #03038a23;
+  border-width: 1px;
+}
+
+.rotate-left {
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+.rotate-right {
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}

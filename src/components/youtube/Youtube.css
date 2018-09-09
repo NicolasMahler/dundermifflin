@@ -1,0 +1,12 @@
+.youtube {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+    -webkit-box-shadow: 0 0 5px #04040425;
+    display: inline;
+}
+
+.youtube-wrapper {
+    border-radius: 10px;
+    height: 280px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+}

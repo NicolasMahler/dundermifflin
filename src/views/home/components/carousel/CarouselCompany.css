@@ -1,0 +1,23 @@
+.title {
+    color: #03038a;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin: 50px 0;
+}
+
+.carousels {
+    height: 440px;
+}
+
+.flickity-viewport {
+    height: 100% !important;
+
+}
+
+.carousel-container {
+    width: 90%;
+    margin-left: 5%;
+    box-sizing: content-box;
+    text-align: center;
+    margin-top: 10px;
+}

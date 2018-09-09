@@ -1,0 +1,14 @@
+.navbar {
+    width: 100%;
+    /*background-color: rgba(10, 10, 10, 0.2);*/
+    display: flex;
+}
+
+.logo {
+    top: 10px;
+    left: 20px;
+    position: fixed;
+    margin: 10px 0;
+    width: 140px;
+}
+

@@ -1,0 +1,37 @@
+.footer {
+    background-color: #03038a;
+    background-image: linear-gradient(to bottom right, #03038a 0%, rgba(150, 150, 150, 0.5));
+    height: 140px;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    padding: 10px;
+    padding-top: 60px;
+}
+
+.logo-footer {
+    margin-right: 0;
+    height: 50px;
+    width: auto;
+    margin: 10px 10px;
+    margin-right: auto;
+}
+
+.links-right {
+    margin-right: auto;
+    display: flex;
+    color: white;
+    list-style-type: none;
+    padding-top: 20px;
+    padding-right: 35px;
+}
+
+.links-right-link {
+    margin-right: 15px;
+}
+
+.copyright {
+    margin-top: 20px;
+    margin-right: 35px;
+    color: white;
+    font-size: 10px;
+}

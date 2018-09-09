@@ -1,0 +1,16 @@
+.info-text {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.info-img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+}
+
+.info-header {
+    color: #03038a;
+    font-size: 25px;
+}

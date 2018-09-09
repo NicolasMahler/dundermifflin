@@ -1,0 +1,19 @@
+.duo {
+    line-height: 25px;
+}
+
+.row {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+}
