@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import StoreItem from './components/store-item/StoreItem';
+import Navbar from '../../components/navbar/Navbar';
 
 class Store extends Component {
     render() {
         return (
             <div>
-                <h1>Store</h1>
-                <StoreItem/>
-                <StoreItem sale />
+                <Navbar />
             </div>
         )
     }

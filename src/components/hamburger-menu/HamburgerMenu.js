@@ -17,7 +17,7 @@ class HamburgerMenu extends Component {
 
     render() {
         return (
-            <ul className="hamburger-menu">
+            <ul className="hamburger-menu d-block d-md-none">
                 <li className="hamburger-icon" onClick={this.setActive}>
                     <div className={this.state.active ? 'change bar1' : 'bar1'}></div>
                     <div className={this.state.active ? 'change bar2' : 'bar2'}></div>

@@ -22,7 +22,7 @@ class CarouselCompany extends Component {
         return (
             <div className="carousel-container">
                 <h2 className="title">The Dunder Mifflin Difference</h2>
-
+                <div className="CarouselCompany__carousel-container">
                 <Flickity
                     className={'carousels'} // default ''
                     elementType={'div'} // default 'div'
@@ -60,6 +60,7 @@ class CarouselCompany extends Component {
                             linkText="Learn More"
                             link="/#"></CompanyItem>
                 </Flickity>
+                </div>
                 <br/>
                 <br/>
             </div>

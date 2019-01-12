@@ -1,14 +1,109 @@
-.navbar {
+.navbar__container {
     width: 100%;
-    /*background-color: rgba(10, 10, 10, 0.2);*/
+    height: 60px;
     display: flex;
-}
-
-.logo {
-    top: 10px;
-    left: 20px;
     position: fixed;
-    margin: 10px 0;
-    width: 140px;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+    border-bottom: 2px solid var(--darkest-blue);
 }
 
+@media only screen and (max-width: 768px) {
+    .navbar__container {
+        background-color: transparent;
+        box-shadow: 0 0 0 transparent;
+        border-bottom: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.navbar__link-container {
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.navbar__link-container li {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar__link {
+    display: inline;
+    position: relative;
+    top: 0;
+    margin: auto 20px auto 20px;
+    color: var(--darkest-blue);
+    font-size: 1.5em;
+    text-align: center;
+    transition: all 0.3s;
+    height: 55px;
+}
+
+.navbar__link::after {
+    content: '';
+    position: relative;
+    display: block;
+    top: 5px;
+    left: 7.5%;
+    width: 0;
+    margin: auto;
+    height: 2px;
+    background-color: var(--darkest-blue);
+    transition: all 0.3s;
+}
+
+.navbar__link:hover {
+    text-decoration: none;
+    color: var(--darkest-blue);
+    top: -3px;
+}
+
+.navbar__link.navbar__link--active:hover {
+    text-decoration: none;
+    color: var(--darkest-blue);
+    top: 0;
+}
+
+.navbar__link.navbar__link--active::after {
+    width: 90%;
+}
+
+.navbar__link.navbar__link--active:hover::after {
+    width: 90%;
+    top: 5px;
+}
+
+.navbar__link:hover::after {
+    width: 90%;
+    top: 8px;
+}
+
+.navbar__link:focus {
+    outline: none;
+}
+
+.navbar__logo {
+    position: fixed;
+    left: 10px;
+    top: 8px;
+    height: 45px;
+    width: 100px;
+    background-image: url('../../assets/pictures/colored_logo.png');
+    background-repeat: no-repeat;
+    background-size: 100px 45px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar__logo {
+        /* background-image: url('../../assets/pictures/Dunder-Mifflin-Logo-Light.png'); */
+        position: relative;
+        top: 8px;
+        left: 10px;
+    }
+}

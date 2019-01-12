@@ -19,7 +19,7 @@ const CompanyInfo = () => {
             </DuoContainer>
             <br />
             <br />
-            <DuoContainer>
+            <DuoContainer leftTop>
                 <section>
                     <h2 className="info-header">Dunder Mifflin Salesmen</h2>
                     <br />

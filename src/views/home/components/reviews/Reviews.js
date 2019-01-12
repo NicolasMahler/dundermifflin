@@ -5,7 +5,6 @@ import Daniel from '../../../../assets/pictures/Daniel.png';
 import DuoContainer from '../../../../components/duocontainer/DuoContainer';
 import Christian from '../../../../assets/pictures/christian.png';
 import Business from '../../../../assets/pictures/Business.png';
-import ReviewItem from './review-item/ReviewItem';
 
 
 class Reviews extends Component {
@@ -22,7 +21,7 @@ class Reviews extends Component {
                     <img className="d-inline-block w-50 quote-img" src={ Jan } alt="Jan Customer Review" />
                 </DuoContainer>
                 <hr className="rotate-left"/>
-                <DuoContainer>
+                <DuoContainer leftTop>
                     <img className="d-inline-block w-50 quote-img" src={ Daniel } alt="Daniel Customer Review" />
                     <div>
                         <p className="quote" ><em>"I have dealt with Dwight and Dunder Mifflin for over 20 years; 
@@ -41,7 +40,7 @@ class Reviews extends Component {
                     <img className="d-inline-block w-50 quote-img" src={ Christian } alt="Christian Customer Review" />
                 </DuoContainer>
                 <hr className="rotate-left"/>
-                <DuoContainer>
+                <DuoContainer leftTop>
                     <img className="d-inline-block w-50 quote-img" src={ Business } alt="Tom Customer Review" />
                     <div>
                         <p className="quote" ><em>"Great Company, even better service, 

@@ -8,19 +8,24 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { faHospital } from '@fortawesome/free-solid-svg-icons';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
+
 library.add(fas);
 library.add(faHospital);
 library.add(faCartPlus);
 
+
 class App extends Component {
+
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route path="/store" component={Store} />
-          <Route path="/" component={Home} />
-        </Switch>
-      </Router>
+      <React.Fragment>
+        <Router>
+          <Switch>
+            <Route path="/store" component={Store} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </Router>
+      </React.Fragment>
     );
   }
 }

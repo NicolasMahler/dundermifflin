@@ -1,9 +1,10 @@
 .footer {
     background-color: #03038a;
     background-image: linear-gradient(to bottom right, #03038a 0%, rgba(150, 150, 150, 0.5));
-    height: 140px;
+    width: 100%;
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     padding-top: 60px;
 }
@@ -34,4 +35,20 @@
     margin-right: 35px;
     color: white;
     font-size: 10px;
+    text-align: center;
+}
+
+@media (max-width: 791px) {
+    .copyright {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .links-right {
+        margin: 0 auto;
+    }
+
+    .logo-footer {
+        margin: 0 auto;
+    }
 }

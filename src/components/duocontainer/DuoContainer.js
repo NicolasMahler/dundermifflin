@@ -3,18 +3,34 @@ import './DuoContainer.css';
 
 class DuoContainer extends Component {
     render() {
-        return (
-            <div className="container duo">
-            <div className="row vertical-align rowDuo">
-                <div className="col-sm-12 col-md-6 col-xs-12">
-                    { this.props.children[0] }
+        if (this.props.leftTop) {
+            return (
+                <div className="container duo">
+                <div className="row vertical-align-reverse rowDuo">
+                    <div className="col-md-6 col-12">
+                        { this.props.children[0] }
+                    </div>
+                    <div className="col-md-6 col-12">
+                        { this.props.children[1] }
+                    </div>
+                    </div>
                 </div>
-                <div className="col-sm-12 col-md-6 col-xs-12">
-                    { this.props.children[1] }
+            )
+        }
+        else {
+            return (
+                <div className="container duo">
+                <div className="row vertical-align rowDuo">
+                    <div className="col-md-6 col-12">
+                        { this.props.children[1] }
+                    </div>
+                    <div className="col-md-6 col-12">
+                        { this.props.children[0] }
+                    </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-        )
+            )
+        }
     }
 }
 

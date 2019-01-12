@@ -1,7 +1,7 @@
 .item-card {
     box-sizing: content-box;
     background-color: #ffffff;
-    margin-top: 4px;
+    margin-top: 35px;
     text-align: center;
     padding: 50px 25px;
     height: 320px;
@@ -10,10 +10,17 @@
     margin-right: 30px;
     box-shadow: 0 0 2px rgba(100, 100, 100, 0.8);
     -webkit-box-shadow: 0 0 2px rgba(100, 100, 100, 0.8);
+    transition: transform 0.3s, box-shadow 0.4s;
+}
+
+.item-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(100, 100, 100, 0.9);
+    -webkit-box-shadow: 0 0 12px rgba(100, 100, 100, 0.9);
 }
 
 .icon {
-    color: #03038a;
+    color: var(--dark-blue);
     margin-bottom: 20px;
 }
 

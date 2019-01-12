@@ -11,6 +11,6 @@
 }
 
 .info-header {
-    color: #03038a;
+    color: var(--dark-blue);
     font-size: 25px;
 }

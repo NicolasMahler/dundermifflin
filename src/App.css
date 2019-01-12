@@ -1,3 +1,12 @@
+/* COLOUR SCHEME */
+:root {
+  --bright-blue: rgb(29,0,255);
+  --dark-blue: rgb(9,3,138);
+  --darkest-blue: #010257;
+}
+
+/* DEFAULT STYLES FOR TEXT */
+
 html,
 body {
   font-family: "open sans", "Raleway", "Arial", sans-serif;
@@ -17,6 +26,8 @@ a {
   font-family: "Raleway", sans-serif;
 }
 
+/* GLOBAL STYLES */
+
 hr {
   border-color: #03038a23;
   border-width: 1px;
@@ -28,6 +39,7 @@ hr {
   -o-transform: rotate(2deg);
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
+  margin: 40px 100px;
 }
 
 .rotate-right {
@@ -36,4 +48,5 @@ hr {
   -o-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
+  margin: 40px 100px;
 }
