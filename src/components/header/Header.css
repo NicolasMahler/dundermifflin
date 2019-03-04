@@ -3,6 +3,7 @@
     background-color: var(--dark-blue);
     height: 80px;
     width: 100%;
+    list-style-type: none;
 }
 
 .header__image {

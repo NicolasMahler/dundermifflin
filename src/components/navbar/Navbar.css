@@ -26,6 +26,7 @@
     display: flex;
     margin: auto;
     margin-top: 5px;
+    list-style-type: none;
 }
 
 .navbar__link-container li {
@@ -34,23 +35,23 @@
 }
 
 .navbar__link {
-    display: inline;
+    display: inline-block;
     position: relative;
     top: 0;
     margin: auto 20px auto 20px;
     color: var(--darkest-blue);
     font-size: 1.5em;
     text-align: center;
-    transition: all 0.3s;
-    height: 55px;
+    transition: top 0.3s;
+    height: 40px;
 }
 
 .navbar__link::after {
     content: '';
     position: relative;
     display: block;
-    top: 5px;
-    left: 7.5%;
+    top: -5px;
+    left: -5%;
     width: 0;
     margin: auto;
     height: 2px;
@@ -62,6 +63,7 @@
     text-decoration: none;
     color: var(--darkest-blue);
     top: -3px;
+    height: 43px;
 }
 
 .navbar__link.navbar__link--active:hover {
@@ -71,17 +73,17 @@
 }
 
 .navbar__link.navbar__link--active::after {
-    width: 90%;
+    width: 110%;
 }
 
 .navbar__link.navbar__link--active:hover::after {
-    width: 90%;
-    top: 5px;
+    width: 110%;
+    top: -5px;
 }
 
 .navbar__link:hover::after {
-    width: 90%;
-    top: 8px;
+    width: 110%;
+    top: -2px;
 }
 
 .navbar__link:focus {
